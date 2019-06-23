@@ -1,0 +1,20 @@
+
+// Propgrammer: Nagesh Nanjundachari.
+// Demo examples to use semaphore to synchronize two processes.
+
+// How to compile:  make -f Makefile . It creates 3 executables.
+// Open three TERMINALS for running executables. One executable in one terminal.
+// There are three executables: 1. schedproc,  2. evenproc,  3. oddproc
+
+// The process, "schedproc"  controls semapohore operations to release  blocked-execution of other processes.
+// schedproc controls TIME based  RANDOM reurn value by random(). And plus sleep of 5 seconds. 
+
+// If randon return value is even, then "evenproc" process is released to run. 
+// If randon return value is odd , then "oddproc"  process is released to run. 
+
+// CONCEPTS:
+// If sem_op is +ve , sem_val is added to present value of semphore. This makes release. 
+// If sem_op is 0, the caller waits until semval become 0. This demo is in "oddproc.c".
+// If sem_op is -ve, the caller waits until semaphore becomes GtEq>= to ||sem_op|| . This demo is in "evenproc.c".
+
+
