@@ -1,6 +1,7 @@
 // Propgrammer: Nagesh Nanjundachari.
 // Compile this as "cc -o schedproc schedproc.c" OR use Makefile.
 // Demo For Process scheduling using Semaphore control.
+// Please see README or "semid.h" to know SEM OPERATIONS.
 
 #include<stdio.h>
 #include<stdlib.h>
